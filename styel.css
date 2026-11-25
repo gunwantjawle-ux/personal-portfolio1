@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fa;
+    color: #222222;
+    line-height: 1.6;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: #94D5DF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.photo {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    margin-bottom: 14px;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    color: #111111;
+    margin-bottom: 4px;
+}
+
+.role {
+    font-size: 14px;
+    color: #222222;
+    margin-bottom: 28px;
+}
+
+.nav {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.nav li {
+    margin-bottom: 10px;
+}
+
+.nav a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #111111;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.nav a:hover {
+    background-color: #ffffff;
+    color: #1d6f7d;
+}
+
+.social a {
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+    color: #111111;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    margin-left: 260px;
+    padding: 35px 45px;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 1px solid #d9ebee;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.intro {
+    background-color: #eaf7f9;
+    border-left: 6px solid #94D5DF;
+}
+
+.intro h1 {
+    font-size: 32px;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+.intro h3 {
+    font-size: 18px;
+    color: #1d6f7d;
+    margin-bottom: 14px;
+}
+
+.intro p {
+    color: #444444;
+    margin-bottom: 20px;
+    max-width: 650px;
+}
+
+.heading {
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #94D5DF;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #94D5DF;
+    color: #111111;
+    font-weight: bold;
+    padding: 10px 22px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7bc5d1;
+}
+
+.skillrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #f4f9fa;
+    border: 1px solid #d9ebee;
+    border-top: 4px solid #94D5DF;
+    border-radius: 6px;
+    padding: 16px;
+    width: 195px;
+}
+
+.skill h3 {
+    font-size: 16px;
+    color: #1d6f7d;
+    margin-bottom: 6px;
+}
+
+.skill p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.project {
+    background-color: #f9fdfe;
+    border: 1px solid #d9ebee;
+    border-left: 5px solid #94D5DF;
+    border-radius: 6px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    font-size: 18px;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+.project p {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.link {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 2px solid #94D5DF;
+    color: #1d6f7d;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.link:hover {
+    background-color: #94D5DF;
+    color: #111111;
+}
+
+.details {
+    margin-bottom: 18px;
+    font-size: 15px;
+    color: #333333;
+}
+
+.details p {
+    margin-bottom: 6px;
+}
+
+.form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
+.form textarea {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #666666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .skill {
+        width: 100%;
+    }
+}
